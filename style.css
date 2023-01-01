@@ -118,8 +118,7 @@ Backgrounds*/
 }
 
 .switch--circle button{
-    position: absolute;
-   
+    position: absolute; 
     top: 4%;
     margin: 0.1rem;
     border: none;
@@ -128,6 +127,9 @@ Backgrounds*/
     background-color: var(--Red);
     z-index: 100;
     border-radius: 50%;
+}
+.switch--circle button:hover{
+    background-color: var(-Red);
 }
 #one{
     left: 3%;
@@ -185,7 +187,10 @@ button[data-reset]{
     text-transform: uppercase;
     font-size: 1rem;
 }
-
+button[data-reset]:hover,
+button[data-delete]:hover{
+    background-color:  hsl(225, 21%, 49%);
+}
 button[data-reset],
 button[data-equals]{
     grid-column: span 2;
@@ -194,6 +199,9 @@ button[data-equals]{
     background-color: var(--Red);
     box-shadow: 0.02rem 0.2rem var(--Dark-red);
      color: var(--White);
+}
+button[data-equals]:hover{
+    background-color: var(--Red);
 }
 @media screen and (min-width: 300px){
     .container{
