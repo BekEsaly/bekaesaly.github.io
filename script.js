@@ -14,7 +14,7 @@ btns.forEach(btn=>{
 result.addEventListener('click',()=>{
  
       try{
-        screen.innerText=eval(screen.innerText).toFixed(6)
+        screen.innerText=eval(screen.innerText).toFixed(2)
       }
       catch{
           alert('Error!');
